@@ -8,7 +8,7 @@ from loguru import logger
 from utils import load_config, make_config
 from builders import get_builder, run_custom_script
 
-__version__ = "v0.7.3-beta (build 2026.05.16-2010)"
+__version__ = "v0.8-beta"
 
 logger.remove()
 logger.add(sys.stderr, format="<level>{level: ^8}</level>| {message}")

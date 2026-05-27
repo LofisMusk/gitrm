@@ -9,7 +9,6 @@ Stop wasting time remembering compiler flags. One tool, one command, any languag
 * **YAML Configuration:** A clean, modern `gitrm.yaml` format for project management.
 * **Simplified Dependencies:** A straightforward list of required packages in the `deps` section.
 * **Custom scripts:** Use your custom setup scripts instead of basic building process - Python and Bash supported.
-* **Native Distribution:** Built with Python and compiled into a native binary using Nuitka for maximum performance.
 
 **The project is still in development and many features are yet to come.**
 
@@ -71,11 +70,10 @@ If `override` is false, the script will run after the compilation if you specifi
 * **Java** (Maven)
 
 ## Setup and installation
-To compile gitrm and install it into your local binary folder, run the provided build.sh script. It will build the binary and move it to `~/.local/bin/gitrm`. Ensure this directory is in your system's `$PATH`.
+To install gitrm into your local binary folder, run the provided setup.sh script. It will copy the main file to `~/.local/bin/gitrm` and its modules to `~/.local/share/gitrm`. Ensure this directory is in your system's `$PATH`.
 
 ## Quick start
 * `gitrm config` - Generate a template for your project.
 * `gitrm clone` - Clone a repository and automatically build the project (if gitrm.yaml exists)
-  * `-k`, `--keep` - Keep the source code after a successful build.
 * `gitrm build`  - Detect and compile the current project.
 * `gitrm version` - Show current version.

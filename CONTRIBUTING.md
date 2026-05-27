@@ -19,7 +19,7 @@ The builder system is now modular. To add a new language:
 ## Development Workflow
 
 ### Project structure
-* `main.py`: CLI entry point (Typer)
+* `gitrm.py`: CLI entry point (Typer)
 * `builders.py`: Logic for different languages
 * `models.py`: Data structures
 * `utils.py`: YAML parsing
@@ -29,7 +29,7 @@ The builder system is now modular. To add a new language:
 To test your changes without compiling:
 
 ```bash
-python3 src/main.py build
+python3 src/gitrm.py build
 ```
 
 ## Style guide
