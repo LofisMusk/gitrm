@@ -8,10 +8,10 @@ from loguru import logger
 from utils import load_config, make_config
 from builders import get_builder, run_custom_script
 
-__version__ = "v0.8.1-beta"
+__version__ = "v0.8.2-beta"
 
 logger.remove()
-logger.add(sys.stderr, format="<level>{level: ^8}</level>| {message}")
+logger.add(sys.stderr,format="<level>-- {level}</level>  {message}") 
 
 app = typer.Typer(
     help="gitrm (git repo manager) - Tool for building and managing projects.",
