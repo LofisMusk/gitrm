@@ -8,7 +8,7 @@ from loguru import logger
 from utils import load_config, make_config
 from builders import get_builder, run_custom_script
 
-__version__ = "v0.8-beta"
+__version__ = "v0.8.1-beta"
 
 logger.remove()
 logger.add(sys.stderr, format="<level>{level: ^8}</level>| {message}")
@@ -39,10 +39,7 @@ def build():
         raise typer.Exit(code=1)
 
 @app.command()
-def clone(
-    url: str, 
-    keep_source: bool = typer.Option(False, "--keep", "-k", help="Keep the source code after building")
-):
+def clone(url: str):
     """
     Clone a repository and automatically build the project (if gitrm.yaml exists)
     """
